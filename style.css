@@ -11,6 +11,23 @@ body {
     align-items: center;
     height: 100vh;
 }
+.buttons button {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    background-color: rgb(27, 191, 203);
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   
+ .buttons button:hover {
+    text-decoration: underline;
+    font-size: 1.05em;
+   }
 
 #game-canvas {
     border: 2px solid #333;
