@@ -8,6 +8,9 @@ const app = new PIXI.Application({
   backgroundColor: 0x1099bb,
 });
 document.body.appendChild(app.view);
+const startBtn = document.querySelector(".start-btn");
+
+const pauseBtn = document.querySelector(".pause-btn");
 
 // Load game assets
 const loader = PIXI.Loader.shared;
@@ -65,6 +68,20 @@ function setup() {
       app.stage.addChild(bullet);
       // Add bullet physics
                                      }
-    else{
-  });
+   
+  );
+  
+  startBtn.addEventListener("click", () => {
+    if (!gameRunning) {
+        gameRunning = true;
+        app.stage.addChild(bullet);
+    }
+});
+
+   pauseBtn.addEventListener("click", () => {
+    gameRunning = false;
+    app.stage.addChild(bullet)
+});
+  
+  
 }
